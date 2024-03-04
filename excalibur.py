@@ -3,15 +3,13 @@ import subprocess
 import sys
 
 
-# checking whether the platform used is windows, for using applicable shell command to activate venv
+# checks whether the platform used is windows, for using applicable shell command to activate venv
 is_windows = sys.platform.startswith('win')
 
 if is_windows:
-    venv_path = "venv\Scripts\activate"
-    subprocess.call(f"call {venv_path}", shell=True)
+    subprocess.call(os.path.join("venv", "Scripts", "activate"), shell=True)
 else:
-    venv_path = "venv/bin/activate"
-    subprocess.call(f"source {venv_path}", shell=True)
+    subprocess.call(os.path.join("venv", "bin", "activate"), shell=True)
 
 
 import pyautogui
