@@ -15,7 +15,7 @@ else:
 
 import pyautogui
 
-pyautogui.displayMousePosition
+pyautogui.displayMousePosition()
 
 
 # import pyautogui
