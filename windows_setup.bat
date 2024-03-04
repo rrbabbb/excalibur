@@ -7,5 +7,5 @@ call venv\Scripts\activate
 rem installs the required libraries within virtualenvironment
 pip install -r requirements.txt
 
-rem exits virtualenvironment
-deactivate
+rem runs script
+python excalibur.py

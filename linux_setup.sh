@@ -2,10 +2,10 @@
 python3 -m venv venv
 
 # activates the virtualenvironment
-source venv/Scripts/activate
+source venv/bin/activate
 
 # installs the required libraries within virtualenvironment
 pip install -r requirements.txt
 
-# exits virtualenvironment
-deactivate
+# runs script
+python3 excalibur.py
