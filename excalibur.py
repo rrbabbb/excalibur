@@ -14,5 +14,6 @@ else:
     subprocess.call(f"source {venv_path}", shell=True)
 
 
-
 import pyautogui
+
+pyautogui.dragTo(100,120)

@@ -1,5 +1,5 @@
 # creates a virtualenvironment
-python -m venv venv
+python3 -m venv venv
 
 # activates the virtualenvironment
 source venv/Scripts/activate
