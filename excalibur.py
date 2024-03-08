@@ -6,13 +6,13 @@ import sys
 is_windows = sys.platform.startswith('win')
 
 if is_windows:
-    subprocess.call("launch.bat", shell=True)
+    subprocess.Popen(os.path.join("venv", "Scripts", "activate"), shell=True)
 else:
-    subprocess.call("bash launch.sh", shell=True)
+    subprocess.Popen(os.path.join("venv", "bin", "activate"), shell=True)
 
 
 import pyautogui
 
-pyautogui.displayMousePosition()
+print(pyautogui.displayMousePosition())
 
 
