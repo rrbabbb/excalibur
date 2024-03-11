@@ -1,6 +1,6 @@
 rem creates venv and activates it
 python -m venv venv
-venv\Scripts\activate
+call venv\Scripts\activate
 
 rem installs required dependencies
 pip install -r requirements.txt
