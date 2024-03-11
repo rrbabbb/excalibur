@@ -1,0 +1,2 @@
+pyinstaller==6.5.0
+PyAutoGui==0.9.54
